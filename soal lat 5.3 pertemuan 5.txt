@@ -1,0 +1,5 @@
+3. Ciri-ciri Double Stack Berdasarkan Kondisi
+Kondisi	Ciri-Ciri
+a. Stack penuh	Top2 - Top1 = 1
+b. Stack bisa diisi	Top2 - Top1 > 1
+c. Kedua stack kosong	Top1 = -1 dan Top2 = MAX

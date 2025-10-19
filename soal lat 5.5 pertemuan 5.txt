@@ -1,0 +1,6 @@
+5.Algoritma Mengambil Isi Stack2 Satu per Satu dan Mencetaknya
+ALGORITMA CETAK_STACK2
+1. Selama Top2 ≠ MAX, lakukan:
+    a. x ← S[Top2]
+    b. Tampilkan "Item Stack2: ", x
+    c. Top2 ← Top2 + 1

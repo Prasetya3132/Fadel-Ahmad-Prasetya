@@ -1,0 +1,13 @@
+2. Algoritma Dasar
+a. PUSH1
+Top1 ← Top1 + 1
+S[Top1] ← x
+b. POP1
+x ← S[Top1]
+Top1 ← Top1 - 1
+c. PUSH2
+Top2 ← Top2 - 1
+S[Top2] ← x
+d. POP2
+x ← S[Top2]
+Top2 ← Top2 + 1

@@ -1,0 +1,33 @@
+1. Algoritma Lengkap untuk Operasi Double Stack
+a. Mengisi Stack1 (PUSH1)
+ALGORITMA PUSH1(x)
+1. Jika Top2 = Top1 + 1, maka:
+   a. Tampilkan "Stack1 Overflow"
+   b. Keluar
+2. Top1 ← Top1 + 1
+3. S[Top1] ← x
+4. Tampilkan "Item berhasil disisipkan ke Stack1: ", x
+b. Menghapus isi Stack1 (POP1)
+ALGORITMA POP1
+1. Jika Top1 = -1, maka:
+   a. Tampilkan "Stack1 Underflow"
+   b. Keluar
+2. x ← S[Top1]
+3. Top1 ← Top1 - 1
+4. Tampilkan "Item yang dihapus dari Stack1: ", x
+c. Mengisi Stack2 (PUSH2)
+ALGORITMA PUSH2(x)
+1. Jika Top2 = Top1 + 1, maka:
+   a. Tampilkan "Stack2 Overflow"
+   b. Keluar
+2. Top2 ← Top2 - 1
+3. S[Top2] ← x
+4. Tampilkan "Item berhasil disisipkan ke Stack2: ", x
+d. Menghapus isi Stack2 (POP2)
+ALGORITMA POP2
+1. Jika Top2 = MAX, maka:
+   a. Tampilkan "Stack2 Underflow"
+   b. Keluar
+2. x ← S[Top2]
+3. Top2 ← Top2 + 1
+4. Tampilkan "Item yang dihapus dari Stack2: ", x

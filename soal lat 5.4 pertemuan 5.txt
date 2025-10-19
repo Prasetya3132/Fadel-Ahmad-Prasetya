@@ -1,0 +1,6 @@
+4. Algoritma Mengambil Isi Stack1 Satu per Satu dan Mencetaknya
+ALGORITMA CETAK_STACK1
+1. Selama Top1 ≠ -1, lakukan:
+    a. x ← S[Top1]
+    b. Tampilkan "Item Stack1: ", x
+    c. Top1 ← Top1 - 1
