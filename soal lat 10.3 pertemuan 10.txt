@@ -1,0 +1,50 @@
+ 3. Penerapan Aplikasi STACK dengan Array
+Stack dengan array adalah implementasi stack menggunakan array statis.
+Operasi utamanya tetap mengikuti prinsip LIFO.
+🧱 Struktur Dasar:
+#define MAX 100
+int stack[MAX];
+int top = -1;
+	Operasi Dasar:
+•	Push (Menambah data ke atas stack)
+void push(int value) {
+    if(top < MAX - 1) {
+        top++;
+        stack[top] = value;
+    } else {
+        cout << "Stack overflow\n";
+    }
+}
+
+
+
+•	Pop (Menghapus data paling atas)
+int pop() {
+    if(top >= 0) {
+        return stack[top--];
+    } else {
+        cout << "Stack underflow\n";
+        return -1;
+    }
+}
+•	Peek (Melihat data paling atas)
+int peek() {
+    if(top >= 0) {
+        return stack[top];
+    } else {
+        cout << "Stack kosong\n";
+        return -1;
+    }
+}
+•	Kekurangan Stack dengan Array:
+o	Ukuran tetap (statis).
+o	Dapat terjadi overflow jika kapasitas array penuh.
+•	Kelebihan:
+o	Sederhana dan mudah diimplementasikan.
+o	Akses cepat karena elemen bersebelahan di memori.
+
+
+
+
+
+

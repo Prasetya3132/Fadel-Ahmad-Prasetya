@@ -1,0 +1,8 @@
+5. Menghitung dan Mencetak Jumlah Elemen yang Ada Isinya (Tanpa Counter)
+Misal:
+F = indeks depan (front)
+R = indeks belakang (rear)
+n = ukuran queue (misal n = 10)
+Algoritma:
+Algoritma HITUNG_ELEMEN_ISI(F, R, n)
+Output: Jumlah elemen dalam antrian

@@ -1,0 +1,10 @@
+3.Algoritma Mengisi dari Kanan Sampai Penuh Kanan
+ALGORITMA MENGISI DARI KANAN SAMPAI PENUH
+1. Inisialisasi:
+    a. L ← 0
+    b. R ← -1
+2. Selama R < n - 1 lakukan:
+    a. Input x  // record yang akan dimasukkan
+    b. R ← R + 1
+c. Q[R] ← x
+3. Jika R = n - 1, tampilkan "Antrian penuh kanan"

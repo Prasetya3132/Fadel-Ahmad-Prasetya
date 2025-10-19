@@ -1,0 +1,8 @@
+4.
+No	Kondisi	Ciri
+a	Kosong	F = R + 1
+b	Penuh	R = n - 1
+c	Bisa diisi	R < n - 1
+d	Ada isinya	F <= R
+e	Tak bisa diisi tapi belum ada yang keluar	F = 0, R = n - 1
+f	Perlu di-reset	F = R + 1 dan R = n - 1

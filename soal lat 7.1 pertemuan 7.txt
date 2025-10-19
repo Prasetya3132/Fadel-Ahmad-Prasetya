@@ -1,0 +1,9 @@
+1. Ciri Circular Queue dalam kondisi berikut
+Kondisi	Ciri atau Syarat
+a. Kosong	count == 0 atau front == (rear + 1) % n saat antrian belum diisi
+b. Penuh	count == n atau (rear + 1) % n == front
+c. Bisa diisi	count < n atau (rear + 1) % n != front
+d. Ada isinya	count > 0 atau front != (rear + 1) % n
+e. Hanya berisi 10 record	count == 10
+f. Tempat kosong hanya ada 10 tempat	n - count == 10 atau count == n – 10
+

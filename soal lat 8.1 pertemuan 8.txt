@@ -1,0 +1,29 @@
+1.	Algoritma Dasar DEQUE
+a.	Inisialisasi
+ALGORITMA INISIALISASI
+Set L ← 0
+Set R ← -1
+b. Insert sebuah record dari kanan
+ALGORITMA INSERT DARI KANAN
+Jika R < n - 1 maka:
+ R ← R + 1
+ Q[R] ← x  // x adalah record yang akan dimasukkan
+ Jika tidak, tampilkan "Antrian penuh kanan"
+c. Insert sebuah record dari kiri
+ALGORITMA INSERT DARI KIRI
+Jika L > 0 maka:
+L ← L – 1
+Q[L] ← x
+ Jika tidak, tampilkan "Antrian penuh kiri"
+d. Delete sebuah record dari kanan
+ALGORITMA DELETE DARI KANAN
+1. Jika L ≤ R maka:
+ x ← Q[R]
+ R ← R – 1
+ Jika tidak, tampilkan "Antrian kosong"
+e. Delete sebuah record dari kiri
+ALGORITMA DELETE DARI KIRI
+   Jika L ≤ R maka:
+    x ← Q[L]
+    L ← L + 1
+   Jika tidak, tampilkan "Antrian kosong"

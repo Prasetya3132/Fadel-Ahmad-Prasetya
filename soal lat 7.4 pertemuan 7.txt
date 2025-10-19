@@ -1,0 +1,17 @@
+4.	Algoritma Menghapus Isi Antrian Maksimal 10 Record
+Algoritma HAPUS_ANTRIAN()
+Deklarasi:
+    i ← 0
+    x : record
+1. Ulangi selama (i < 10)
+2.     Jika (count == 0) maka
+3.         Tulis "Antrian kosong. Penghapusan dihentikan."
+4.         Keluar dari loop
+5.     Akhir Jika
+6.     x ← Q[front]
+7.     front ← (front + 1) mod n
+8.     count ← count - 1
+9.     Tulis "Record ke-", i+1, " dihapus: ", x
+10.    i ← i + 1
+11. Akhir Ulangi
+12. Tulis "Penghapusan selesai. Total record dihapus: ", i

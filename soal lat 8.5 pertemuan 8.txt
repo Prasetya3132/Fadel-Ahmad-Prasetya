@@ -1,0 +1,14 @@
+5. Algoritma Mengisi 10 Record dari Kanan (Berhenti jika Penuh)
+ALGORITMA MENGISI 10 RECORD DARI KANAN (BERHENTI JIKA PENUH)
+1. Inisialisasi:
+    a. L ← 0
+    b. R ← -1
+2. Untuk i dari 1 sampai 10 lakukan:
+    a. Jika R < n - 1 maka:
+        i. Input x
+        ii. R ← R + 1
+        iii. Q[R] ← x
+        iv. Tampilkan "Record ke-", i, " dimasukkan"
+    b. Jika tidak:
+        i. Tampilkan "Antrian penuh kanan. Pengisian dihentikan."
+        ii. Hentikan proses

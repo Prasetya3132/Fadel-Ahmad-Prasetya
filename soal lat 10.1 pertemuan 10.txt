@@ -1,0 +1,11 @@
+1. Pengertian Konsep LIFO (Last In First Out)
+•LIFO adalah prinsip di mana data terakhir yang masuk adalah data pertama yang keluar.
+Artinya, elemen yang paling baru ditambahkan ke struktur akan menjadi yang pertama dihapus.
+Contoh:
+Jika kamu menumpuk buku:
+Buku pertama: A
+Buku kedua: B
+Buku ketiga: C
+Jika kamu ambil 1 buku, maka C (yang terakhir masuk) yang akan diambil duluan.
+Struktur Data yang menggunakan konsep LIFO:
+Stack (Tumpukan)

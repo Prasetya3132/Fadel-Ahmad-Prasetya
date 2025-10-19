@@ -1,0 +1,42 @@
+2. Menempatkan pointer Q ke posisi tertentu
+Misal sudah ada linked list banyak (lebih dari 10 simpul) dan kita punya pointer FIRST menunjuk simpul pertama, LAST menunjuk simpul terakhir (di mana LAST->LINK = NULL). Kita ingin susun algoritma agar pointer Q menunjuk ke:
+a) Simpul no (1) — yaitu simpul pertama
+b) Simpul no (7) — yaitu simpul ke 7 dari awal
+c) Simpul akhir — yaitu simpul yang ditunjuk LAST
+d) Simpul dengan nilai INFO = 50
+e) Simpul yang letaknya satu simpul di depan (sebelah kiri) simpul dengan nilai INFO = 50
+Algoritma (pseudocode)
+ a) Menunjuk simpul no 1
+Q = FIRST;
+b) Menunjuk simpul no 7
+Q = FIRST;
+i = 1;
+while (Q ≠ NULL AND i < 7) do
+    	Q = Q->LINK;
+    	i = i + 1;
+end while
+jika Q = NULL → list kurang dari 7 simpul
+c) Menunjuk simpul akhir
+Q = LAST;
+d) Menunjuk simpul dengan INFO = 50
+Q = FIRST;
+while (Q ≠ NULL AND Q->INFO ≠ 50) do
+    	Q = Q->LINK;
+end while
+Jika Q = NULL → tidak ditemukan simpul dengan INFO 50
+ e) Menunjuk simpul yang letaknya satu simpul di depan simpul dengan INFO = 50
+Q = FIRST;
+if (FIRST = NULL OR FIRST->LINK = NULL) then
+    	list kosong atau hanya 1 simpul → tidak bisa
+    	Q = NULL;
+else
+    	while (Q->LINK ≠ NULL AND Q->LINK->INFO ≠ 50) do
+        	Q = Q->LINK;
+    	end while
+    sekarang Q->LINK->INFO = 50 (jika ditemukan)
+    	if (Q->LINK = NULL) then
+        	 simpul dengan INFO=50 tidak ditemukan atau di posisi pertama
+        	Q = NULL;
+    	end if
+end if
+

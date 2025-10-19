@@ -1,0 +1,14 @@
+1.	 void isiAntrian(Queue &q) {
+ int data;
+ int count = 0;
+    while (count < 10) {
+        if (q.isFull()) {
+            cout << "Antrian penuh. Pengisian dihentikan." << endl;
+            break;
+        }
+        cout << "Masukkan data ke-" << count + 1 << ": ";
+        cin >> data;
+        q.insertQueue(data);
+        count++;
+    }
+}

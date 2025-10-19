@@ -1,0 +1,11 @@
+ 2. Pengertian Konsep FIFO (First In First Out)
+FIFO adalah prinsip di mana data pertama yang masuk adalah data pertama yang keluar.
+Elemen yang masuk lebih dulu akan diakses atau dikeluarkan lebih dulu juga.
+Contoh:
+Antrian di kasir:
+Orang pertama: A
+Orang kedua: B
+Orang ketiga: C
+Maka A akan dilayani duluan, baru B, lalu C.
+Struktur Data yang menggunakan konsep FIFO:
+Queue (Antrian)

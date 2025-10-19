@@ -1,0 +1,10 @@
+5. Hitungan Jumlah Pengantri dan Ruang Tersisa
+Asumsikan n = 100, artinya array queue Q[0..99]
+a. Jika F = 15, R = 37
+Jumlah pengantri yang belum dilayani = R - F + 1
+ 37 - 15 + 1 = 23
+Jawaban: 23
+b. Jumlah kolom yang masih bisa diisi
+Kolom kosong = n - 1 - R
+99 - 37 = 62
+Jawaban: 62

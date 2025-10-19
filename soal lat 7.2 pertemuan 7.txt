@@ -1,0 +1,29 @@
+2.Algoritma Lengkap
+a.	Algoritma Insert Sebuah Record
+Algoritma INSERT_RECORD(x)
+Input: Data record x
+Output: x disisipkan ke antrian jika belum penuh
+
+1. Jika (count == n) maka
+2.     Tulis "Antrian penuh"
+3.     Keluar
+4. Akhir Jika
+
+5. rear ← (rear + 1) mod n
+6. Q[rear] ← x
+7. count ← count + 1
+8. Tulis "Record berhasil disisipkan"
+
+b.	Algoritma Delete Sebuah Record
+Algoritma DELETE_RECORD()
+Output: Record paling depan dihapus
+
+1. Jika (count == 0) maka
+2.     Tulis "Antrian kosong"
+3.     Keluar
+4. Akhir Jika
+
+5. x ← Q[front]
+6. front ← (front + 1) mod n
+7. count ← count - 1
+8. Tulis "Record yang dihapus: ", x

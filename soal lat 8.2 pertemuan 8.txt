@@ -1,0 +1,7 @@
+2.Ciri-Ciri Kondisi DEQUE
+Kondisi	Ciri atau Syarat
+a. Kosong	L > R atau L = R + 1
+b. Penuh kanan	R = n - 1
+c. Penuh kiri	L = 0
+d. Penuh total	L = 0 dan R = n - 1
+e. Isi 10 pengantri	(R - L + 1) = 10

@@ -1,0 +1,19 @@
+3.	Algoritma Mengisi Antrian Sampai 10 Record atau Sampai Penuh
+Algoritma ISI_ANTRIAN()
+Deklarasi:
+    i ← 0
+    x : record
+
+1. Ulangi selama (i < 10)
+2.     Jika (count == n) maka
+3.         Tulis "Antrian sudah penuh. Pengisian dihentikan."
+4.         Keluar dari loop
+5.     Akhir Jika
+6.     Tulis "Masukkan data record ke-", i+1
+7.     Baca x
+8.     rear ← (rear + 1) mod n
+9.     Q[rear] ← x
+10.    count ← count + 1
+11.    i ← i + 1
+12. Akhir Ulangi
+13. Tulis "Pengisian selesai. Total record masuk: ", i

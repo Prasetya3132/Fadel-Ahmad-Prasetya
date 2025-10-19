@@ -1,0 +1,7 @@
+4.Algoritma Menghapus dari Kanan Sampai Kosong
+ALGORITMA DELETE DARI KANAN SAMPAI KOSONG
+1. Selama L ≤ R lakukan:
+ a. x ← Q[R]
+ b. R ← R – 1
+c. Tampilkan "Record dihapus: ", x
+2. Jika L > R, tampilkan "Antrian kosong"

@@ -1,0 +1,31 @@
+1.
+a)Nama dan isi tiap pointer
+Pointer	Nama secara logis	Isi / Simpul yang ditunjuk
+P	pointer P	Simpul dengan INFO = 4
+Q	pointer Q	Simpul dengan INFO = 5
+R	pointer R	Simpul dengan INFO = 6
+S	pointer S	Simpul dengan INFO = 7
+b) Pointer pointer yang bernilai sama
+Dalam contoh ini, tidak ada dua pointer yang menunjuk ke simpul yang sama (P, Q, R, S semuanya menunjuk simpul berbeda). Jadi: tidak ada pointer yang bernilai sama (dalam asumsi ini).
+c) Kondisi TRUE / FALSE untuk instruksi:
+Kita mengevaluasi dengan asumsi di atas:
+I.	if(P->LINK == R) → Apakah P->LINK menunjuk ke R?
+P->LINK = simpul dengan INFO=5 = pointer Q
+R = simpul dengan INFO=6
+→ maka FALSE
+II.	if(Q->LINK == R->LINK) → Apakah link dari Q sama dengan link dari R?
+Q->LINK = simpul dengan INFO=6 (R)
+R->LINK = simpul dengan INFO=7 (S)
+→ Q->LINK = R, R->LINK = S → FALSE
+III.	if(Q->LINK->LINK == S->LINK) → Apakah link dari (link dari Q) sama dengan link dari S?
+Q->LINK = R (INFO=6) → then Q->LINK->LINK = R->LINK = S (INFO=7)
+S->LINK = NULL
+→ S->LINK = NULL, Q->LINK->LINK = S ≠ NULL → FALSE
+IV.	if(Q == R) → Apakah Q dan R menunjuk ke simpul yang sama?
+Q = INFO=5, R = INFO=6 → FALSE
+v. if(Q LINK == R) → (mungkin maksudnya Q->LINK == R) → Apakah Q->LINK = R?
+Q->LINK = R → TRUE
+V.	if(R->LINK->INFO == 5) → Apakah INFO dari node setelah R->LINK = 5?
+R->LINK = S (INFO=7) → R->LINK->INFO = 7 ≠ 5 → FALSE
+vii. if(Q->INFO == 4) → Apakah INFO pada Q = 4?
+Q->INFO = 5 → FALSE

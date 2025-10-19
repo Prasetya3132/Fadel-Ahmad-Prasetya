@@ -1,0 +1,42 @@
+3. Operasi operasi Menghitung dan Mencetak untuk Linked List
+Masih dengan list yang sama (lebih dari 10 simpul, FIRST dan LAST sudah ada), kita ingin:
+a) Menghitung dan mencetak jumlah simpul
+b) Menghitung dan mencetak total nilai INFO (misalnya 25 + 12 + … + 27, 14)
+c) Mencetak semua nilai INFO ke layar
+d) Mencetak jumlah simpul yang nilai INFO = 50
+Algoritma (pseudocode)
+// a) Menghitung dan mencetak jumlah simpul
+count = 0;
+Q = FIRST;
+while (Q ≠ NULL) do
+    count = count + 1;
+    Q = Q->LINK;
+end while
+print "Jumlah simpul = ", count;
+
+// b) Menghitung dan mencetak total INFO
+totalINFO = 0;
+Q = FIRST;
+while (Q ≠ NULL) do
+    totalINFO = totalINFO + Q->INFO;
+    Q = Q->LINK;
+end while
+print "Total INFO = ", totalINFO;
+
+// c) Mencetak semua nilai INFO ke layar
+Q = FIRST;
+while (Q ≠ NULL) do
+    print Q->INFO;
+    Q = Q->LINK;
+end while
+
+// d) Mencetak jumlah simpul yang nilai INFO = 50
+count50 = 0;
+Q = FIRST;
+while (Q ≠ NULL) do
+    if (Q->INFO == 50) then
+        count50 = count50 + 1;
+    end if
+    Q = Q->LINK;
+end while
+print "Jumlah simpul dengan INFO = 50 = ", count50;

@@ -1,0 +1,29 @@
+3.          a. Inisialisasi
+	void AWAL() {
+    	F = 0;
+   	R = -1;
+	}
+       b. Insert Sebuah Record
+	void INSERT(int x) {
+	if (R < n - 1)
+          Q[++R] = x;
+   	else
+        	cout << "Antrian penuh";
+	}
+c. Delete Sebuah Record
+	void DELETE() {
+    	if (F < R + 1) {
+        	x = Q[F++];
+        	if (F == n) {
+          F = 0;
+          R = -1;
+    }
+    } else {
+    cout << "Antrian kosong";
+   }
+   }
+d. Reset
+void RESET() {
+F = 0;
+R = -1;
+            }

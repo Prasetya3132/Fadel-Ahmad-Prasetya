@@ -1,0 +1,13 @@
+2.	void hapusAntrian(Queue &q) {
+int data;
+ int count = 0;
+while (count < 10) {
+if (q.isEmpty()) {
+ cout << "Antrian kosong. Penghapusan dihentikan." << endl;
+break;
+}
+q.deleteQueue(&data);
+cout << "Data yang dihapus: " << data << endl;
+count++;
+}
+}
